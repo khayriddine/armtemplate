@@ -10,7 +10,7 @@
         {
             "type": "Microsoft.KeyVault/vaults",
             "apiVersion": "2019-09-01",
-            "name": "adbDemoKeyVault",
+            "name": "adbDemoKeyVaultTesting",
             "location": "[resourceGroup().location]",
             "properties": {
                 "enabledForDeployment": "false",
@@ -39,10 +39,10 @@
         {
             "type": "Microsoft.KeyVault/vaults/secrets",
             "apiVersion": "2019-09-01",
-            "name": "adbDemoKeyVault/mysecret",
+            "name": "adbDemoKeyVaultTesting/mysecret",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[resourceId('Microsoft.KeyVault/vaults','adbDemoKeyVault')]"
+                "[resourceId('Microsoft.KeyVault/vaults','adbDemoKeyVaultTesting')]"
             ],
             "properties": {
                 "value": "[parameters('vmPassword')]"
