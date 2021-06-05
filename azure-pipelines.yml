@@ -26,7 +26,9 @@ steps:
     resourceGroupName: 'az-303'
     location: 'West Europe'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/khayriddine/armtemplate/keyvault_armtemplate.json'
-    csmParametersFileLink: 'https://github.com/khayriddine/armtemplate/kv_secret_parameters.json'
+    csmFileLink: 'https://az303sa123.blob.core.windows.net/arm-template/keyvault_armtemplate.json'
+    csmParametersFileLink: 'https://az303sa123.blob.core.windows.net/arm-template/kv_secret_parameters.json'
     deploymentMode: 'Incremental'
     deploymentName: 'my_first_deployment'
+
+
